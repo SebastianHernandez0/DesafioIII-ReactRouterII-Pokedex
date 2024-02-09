@@ -1,0 +1,155 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: pokemon;
+  
+}
+
+@font-face {
+  font-family: pokemon ;
+  src: url(./assets/font/pokemon-gb-font/PokemonGb-RAeo.ttf);
+}
+
+h1,h2,h3,h4{
+  text-wrap: balance;
+}
+p{
+  text-wrap: pretty;
+}
+
+a {
+  font-weight: 500;
+  color: red;
+  text-decoration: inherit;
+}
+a:hover {
+  color: purple;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  background-image: url(./assets/img/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.navbar{
+  display: flex;
+  height: 10rem;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.navbar__img{
+  width: 30rem;
+  margin-left: 5rem;
+}
+
+.navbar__links{
+  display: flex;
+  gap: 2rem;
+  margin-right: 10rem;
+  font-size: 1.5rem;
+}
+
+.active{
+  color: purple;
+}
+
+.layout__home{
+  width: 70%;
+  height: 70vh;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.layout__home h2{
+
+  text-shadow: 0px 0px 10px black;
+}
+.home__img{
+  width: 40rem;
+}
+
+.layout__pokemon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+  width: 70%;
+  
+}
+
+.pokemon__select{
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+.pokemon__btn{
+  padding: 1.3rem;
+}
+
+.pokemon__detalle{
+  display: flex;
+  gap: 2rem;
+  width: 70%;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon__detalle button{
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.pokemon__detalle h5{
+  display: flex;
+  gap: 1rem;
+}
